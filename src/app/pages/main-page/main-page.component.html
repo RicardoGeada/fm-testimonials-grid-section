@@ -1,3 +1,5 @@
 <div class="main-page">
-    <app-testimonial-card></app-testimonial-card>
+    @for(testimonial of testimonials; track testimonial) {
+        <app-testimonial-card [testimonial]="testimonial"></app-testimonial-card>
+    }
 </div>

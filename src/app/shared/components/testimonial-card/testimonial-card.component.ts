@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-testimonial-card',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './testimonial-card.component.scss'
 })
 export class TestimonialCardComponent {
-
+    @Input({ required: true }) testimonial!: {
+    image: string,
+    name: string,
+    title: string,
+    headline: string,
+    quote:string,
+  }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TestimonialCardComponent } from "../../shared/components/testimonial-card/testimonial-card.component";
+import testimonialsData from "./../../../assets/data/testimonials.json";
 
 @Component({
   selector: 'app-main-page',
@@ -8,5 +9,5 @@ import { TestimonialCardComponent } from "../../shared/components/testimonial-ca
   styleUrl: './main-page.component.scss'
 })
 export class MainPageComponent {
-
+  testimonials = testimonialsData;
 }
