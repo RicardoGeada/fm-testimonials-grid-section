@@ -1,5 +1,7 @@
 <div class="main-page">
-    @for(testimonial of testimonials; track testimonial) {
-        <app-testimonial-card [testimonial]="testimonial"></app-testimonial-card>
+  <div class="testimonials-grid">
+    @for(testimonial of testimonials; track testimonial; let i = $index) {
+    <app-testimonial-card [testimonial]="testimonial" class="area-{{ i }}"></app-testimonial-card>
     }
+  </div>
 </div>

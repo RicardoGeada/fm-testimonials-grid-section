@@ -1,4 +1,56 @@
+$grid-areas: (0, 1, 2, 3, 4);
+
 .main-page {
-    background-color: #F6F5F6;
-    min-height: 100vh;
+  background-color: #f6f5f6;
+  min-height: 100vh;
+  padding: 73px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: var(--space-400);
+
+  @each $i in $grid-areas {
+    .area-#{$i} {
+      grid-area: a#{$i};
+    }
+  }
+
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a0"
+    "a1"
+    "a2"
+    "a3"
+    "a4";
+}
+
+@media (min-width: 768px) {
+  .main-page {
+    padding: 80px 60px;
+  }
+
+  .testimonials-grid {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a0 a0"
+      "a1 a2"
+      "a3 a3"
+      "a4 a4";
+  }
+}
+
+@media (min-width: 1080px) {
+  .testimonials-grid {
+    max-width: 1114px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a0 a0 a1 a4"
+      "a2 a3 a3 a4";
+  }
 }
