@@ -9,4 +9,5 @@ import { Testimonial } from '../../../../types/testimonial';
 })
 export class TestimonialCardComponent {
     @Input({ required: true }) testimonial!: Testimonial;
+    @Input() variation: "--purple" | "--grey" | "--dark-blue" | "" = "";
 }

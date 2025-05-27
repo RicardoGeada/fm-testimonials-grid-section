@@ -11,4 +11,13 @@ import { Testimonial } from '../../../types/testimonial';
 })
 export class MainPageComponent {
   testimonials: Testimonial[] = testimonialsData;
+
+  getColorVariation (i: number) {
+    switch(i) {
+      case 0: return "--purple";
+      case 1: return "--grey";
+      case 3: return "--dark-blue";
+      default: return "";
+    }
+  }
 }
