@@ -1,59 +1,54 @@
-# TestimonialsGridSection
+# Frontend Mentor - Testimonials grid section solution
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-To start a local development server, run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-```bash
-ng serve
-```
+## Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### The challenge
 
-## Code scaffolding
+Users should be able to:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- View the optimal layout for the site depending on their device's screen size
 
-```bash
-ng generate component component-name
-```
+### Screenshot
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+![](./screenshot.png)
 
-```bash
-ng generate --help
-```
+### Links
 
-## Building
+- Solution URL: [github.com/RicardoGeada/fm-testimonials-grid-section/](https://github.com/RicardoGeada/fm-testimonials-grid-section/)
+- Live Site URL: [ricardogeada.github.io/fm-testimonials-grid-section/](https://ricardogeada.github.io/fm-testimonials-grid-section/)
 
-To build the project run:
+## My process
 
-```bash
-ng build
-```
+### Built with
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- [Angular](https://angular.dev/)
+- CSS Grid
+- SCSS
+- Mobile-first workflow
 
-## Running unit tests
+### What I learned
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+This project helped deepen my understanding of CSS Grid, especially in building responsive layouts.
 
-```bash
-ng test
-```
+### Continued development
 
-## Running end-to-end tests
+I aim to become more confident with CSS Grid and explore more advanced techniques in future projects.
 
-For end-to-end (e2e) testing, run:
+## Author
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Website - [ricardogeada.com](https://www.ricardogeada.com)
+- Frontend Mentor - [@RicardoGeada](https://www.frontendmentor.io/profile/RicardoGeada)
