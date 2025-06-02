@@ -1,7 +1,8 @@
-<div class="main-page">
-  <div class="testimonials-grid">
+<main class="main-page">
+  <h1 class="sr-only">Testimonials</h1>
+  <section class="testimonials-grid">
     @for(testimonial of testimonials; track testimonial; let i = $index) {
     <app-testimonial-card [testimonial]="testimonial" [variation]="getColorVariation(i)" class="area-{{ i }}"></app-testimonial-card>
     }
-  </div>
-</div>
+  </section>
+</main>

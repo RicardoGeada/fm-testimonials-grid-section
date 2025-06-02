@@ -88,7 +88,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .testimonial-card--purple {
     background-image: url('./images/bg-pattern-quotation.svg');
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 67.5em) {
   .testimonial-card--purple {
     background-position: right 14% top 0%;
   }

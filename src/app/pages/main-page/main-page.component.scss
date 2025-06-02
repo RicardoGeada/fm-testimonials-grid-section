@@ -1,23 +1,23 @@
 $grid-areas: (0, 1, 2, 3, 4);
 
 .main-page {
-  background-color: #f6f5f6;
+  background-color: var(--color-white-100);
   min-height: 100vh;
-  padding: 73px 35px;
+  padding: 4.5625em 2.1875em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@each $i in $grid-areas {
+  .area-#{$i} {
+    grid-area: a#{$i};
+  }
+}
+
 .testimonials-grid {
   display: grid;
   gap: var(--space-400);
-
-  @each $i in $grid-areas {
-    .area-#{$i} {
-      grid-area: a#{$i};
-    }
-  }
 
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -28,9 +28,9 @@ $grid-areas: (0, 1, 2, 3, 4);
     "a4";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .main-page {
-    padding: 80px 60px;
+    padding: 5em 3.75em;
   }
 
   .testimonials-grid {
@@ -44,9 +44,9 @@ $grid-areas: (0, 1, 2, 3, 4);
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 67.5em) {
   .testimonials-grid {
-    max-width: 1114px;
+    max-width: 69.625em;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
